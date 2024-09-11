@@ -1,0 +1,40 @@
+@startuml
+skinparam backgroundColor #F9F9F9
+skinparam classBackgroundColor #FFFFF
+skinparam classBorderColor #000000
+skinparam classFontColor #0000FF
+skinparam classFontSize 14
+skinparam classAttributeIconSize 16
+skinparam classMethodIconSize 16
+class Animal {
+    +__init__()
+    +make_sound()
+    +describe()
+}
+class Mammal {
+    +__init__()
+    +has_fur()
+    +describe()
+}
+Animal <|-- Mammal
+class Bird {
+    +__init__()
+    +make_sound()
+    +describe()
+}
+Animal <|-- Bird
+class Dog {
+    +__init__()
+    +fetch()
+    +describe()
+}
+Mammal <|-- Dog
+class Utility {
+    +current_time()
+    +class_info()
+}
+class ContextManagerDemo {
+    +__enter__()
+    +__exit__()
+}
+@enduml

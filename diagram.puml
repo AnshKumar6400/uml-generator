@@ -1,0 +1,31 @@
+@startuml
+class Animal {
+    +__init__()
+    +make_sound()
+    +describe()
+}
+class Mammal {
+    +__init__()
+    +has_fur()
+}
+Animal <|-- Mammal
+class Bird {
+    +__init__()
+    +make_sound()
+}
+Animal <|-- Bird
+class Dog {
+    +__init__()
+    +fetch()
+}
+Mammal <|-- Dog
+class Util {
+    +is_mammal()
+    +common_species()
+}
+class Reptile {
+    +__init__()
+    +__is_venomous_method()
+}
+Animal <|-- Reptile
+@enduml
